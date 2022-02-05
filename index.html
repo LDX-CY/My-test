@@ -7,44 +7,484 @@
  * @FilePath: \爱心表白\index.html
 -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>都是爱你的心心</title>
+<title>ubuntu 配置</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
 
-    <link href="images/favicon.ico" rel="shortcut icon" class="icon-love" type="images/x-ico">
+/* RESET
+=============================================================================*/
 
-    <link rel="stylesheet" href="css/love.css">
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
 </head>
 <body>
-
-<div class="container" onselectstart="return false;" unselectable="on" style="-moz-user-select:none;">
-
-    <div class="body_left">
-        <img src="images/biubiubiu.gif" alt="" ondragstart='return false;'>
-    </div>
-
-    <div class="body_center love">
-        <div class="block">
-            <div class="div1"></div>
-            <div class="div2"></div>
-            <div class="div3"></div>
-            <div class="div4"></div>
-        </div>
-    </div>
-
-</div>
-
-<div class="footer">
-    <div class="border">
-        <div class="border-top"></div>
-        <div class="border-bottom"></div>
-    </div>
-
-</div>
-
-<script type="text/javascript" src="css/love.js"></script>
+<h1>ubuntu 配置</h1>
+<h2>一、安装搜狗输入法</h2>
+<p>```</p>
+<h1>如果在键盘输入法系统中，没有“fcitx”选项时，建议先打开终端手动安装fcitx：sudo apt-get install fcitx等安装成功之后再执行上述步骤点击“应用到整个系统”，关闭窗口，重启电脑</h1>
+<p>sudo apt-get install fcitx</p>
+<h1>通过命令行安装搜狗输入法</h1>
+<p>sudo dpkg -i sogoupinyin<em>版本号</em>amd64.deb
+注：如果安装过程中提示缺少相关依赖，则执行如下命令解决：
+sudo apt -f install
+```</p>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914112854838.png" alt="image-20210914112854838" /></p>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914112919731.png" alt="image-20210914112919731" /></p>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914113041840.png" alt="image-20210914113041840" /></p>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914113054862.png" alt="image-20210914113054862" /></p>
+<h2>一、录屏工具kazam</h2>
+<p><code>$ sudo apt install kazam</code></p>
+<h2>二、火焰截图</h2>
+<p><code>sudo apt install flameshot</code></p>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914110018523.png" alt="image-20210914110018523" /></p>
+<h2>三、typora+gitee+picgo配置图片上传</h2>
+<h3>1.安装node和npm</h3>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914110551404.png" alt="image-20210914110551404" /></p>
+<p>```</p>
+<h1>1.注意是有两层目录，复制里面的那层</h1>
+<p>tar -xvf node-v12.18.3-linux-x64.tar.xz</p>
+<p>sudo cp -r node-v12.18.3-linux-x64 /usr/local/lib/nodejs</p>
+<h1>复制完成后的结果在下图中</h1>
+<h1>将node和npm添加到环境变量中，一条一条执行</h1>
+<p>第一条：echo &quot;export export PATH=/usr/local/lib/nodejs/bin:$PATH&quot; &gt;&gt; ~/.profile</p>
+<p>第二条：echo &quot;export export PATH=/usr/local/lib/nodejs/bin:$PATH&quot; &gt;&gt; ~/.bashrc</p>
+<p>第三条：. ~/.profile</p>
+<p>第四条：. ~/.bashrc</p>
+<p>```</p>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914110616161.png" alt="image-20210914110616161" /></p>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914110800935.png" alt="image-20210914110800935" /></p>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914111114090.png" alt="image-20210914111114090" /></p>
+<p>```</p>
+<h1>测试安装</h1>
+<p>node -v
+npm -v
+```</p>
+<ul>
+<li>如果想<code>sudo node xxxx</code> 或 <code>sudo npm xxxx</code>执行一些操作，需要执行以下命令：</li>
+</ul>
+<p><code>sudo ln -s /usr/local/lib/nodejs/bin/node /usr/bin/node
+sudo ln -s /usr/local/lib/nodejs/bin/npm /usr/bin/npm
+sudo ln -s /usr/local/lib/nodejs/bin/npx /usr/bin/npx</code></p>
+<h3>2.安装PicGo-core</h3>
+<p>```</p>
+<h1>配置cnpm</h1>
+<p>sudo npm install -g cnpm</p>
+<h1>安装PicGo-core</h1>
+<p>sudo npm install picgo -g</p>
+<h1>安装gitee上传插件</h1>
+<p>picgo install gitee-uploader
+```</p>
+<h3>3.修改PicGo-core配置文件</h3>
+<p><code>sudo gedit ~/.picgo/config.json</code></p>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914111635849.png" alt="image-20210914111635849" /></p>
+<p>```
+{
+  &quot;picBed&quot;: {
+    &quot;current&quot;: &quot;gitee&quot;,
+    &quot;uploader&quot;: &quot;gitee&quot;,
+    &quot;smms&quot;: {
+      &quot;token&quot;: &quot;&quot;
+    },
+    &quot;gitee&quot;: {
+      &quot;message&quot;: null,
+      &quot;owner&quot;: &quot;gitee用户名&quot;,
+      &quot;path&quot;: &quot;img&quot;,
+      &quot;repo&quot;: &quot;gitee用户名/仓库名&quot;,
+      &quot;token&quot;: &quot;私人令牌的tokenxxxxxxxxxxxxxxxx&quot;
+    }
+  },
+  &quot;picgoPlugins&quot;: {
+    &quot;picgo-plugin-gitee&quot;: true,
+    &quot;picgo-plugin-gitee-uploader&quot;: true
+  },
+  &quot;picgo-plugin-gitee-uploader&quot;: {
+    &quot;lastSync&quot;: &quot;2021-05-31 12:45:05&quot;
+  }
+}</p>
+<p>```</p>
+<h3>4.token获取</h3>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914111859463.png" alt="image-20210914111859463" /></p>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914111915653.png" alt="image-20210914111915653" /></p>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914111926646.png" alt="image-20210914111926646" /></p>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914111938813.png" alt="image-20210914111938813" /></p>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914111948106.png" alt="image-20210914111948106" /></p>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914112000407.png" alt="image-20210914112000407" /></p>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914112011381.png" alt="image-20210914112011381" /></p>
+<h3>5.配置typora</h3>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914112530897.png" alt="image-20210914112530897" /></p>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914112748001.png" alt="image-20210914112748001" /></p>
+<h2>四、安装配置clash代理</h2>
+<p>```
+下载地址：https://github.com/Dreamacro/clash/releases</p>
+<h1>来到用户主目录下</h1>
+<p>cd ~</p>
+<h1>创建文件夹 clash</h1>
+<p>mkdir clash </p>
+<p>cd clash</p>
+<h1>将刚才下载的文件拷贝到 ~/clash中后，解压</h1>
+<p>rm clash-linux-amd64-v1.6.0.gz clash  # 改名是为了更方便进行后续操作</p>
+<h1>运行</h1>
+<p>./clash</p>
+<h1>配置文件修改</h1>
+<p>路径：~/.config/clash</p>
+<h1>第一次运行clash 会创建~/.config/clash 文件夹，以及其中的两个文件config.yaml 和 Country.mmdb，Country.mmdb不用管，config.yaml 是我们需要修改的配置文件，默认下载下来的config.yaml没用，需要通过wget 或 curl 从订阅地址处获取配置文件</h1>
+<p>```</p>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914121721529.png" alt="image-20210914121721529" /></p>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914121949278.png" alt="image-20210914121949278" /></p>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914122142363.png" alt="image-20210914122142363" /></p>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914122152694.png" alt="image-20210914122152694" /></p>
+<p>```</p>
+<p>在 ./clash 进程仍在运行的情况下，打开浏览器，输入网址：http://clash.razord.top/#/proxies 可以看到 clash 的 UI 界面。</p>
+<p>```</p>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914122025809.png" alt="image-20210914122025809" /></p>
+<h2>五、美化</h2>
+<h3>1.引导界面美化</h3>
+<ul>
+<li>主题下载</li>
+</ul>
+<p><code>官方网址：    https://www.gnome-look.org/p/1009236/
+  百度网盘：    链接: https://pan.baidu.com/s/15u_ffZi6em0UWte4evIvaQ      
+  密码: jlam</code></p>
+<p>```
+命令：
+	解压过程也分为两层：
+		xz -d Vimix-1080p.tar.xz
+	之后就会出现：
+		Vimix-1080p.tar
+	然后
+		tar xvf Vimix-1080p.tar
+移动到该目录下：
+cd /boot/grub</p>
+<p>mkdir themes</p>
+<p>将下载的主题解压到/boot/grub/themes目录下</p>
+<p>```</p>
+<ul>
+<li>更换引导界面图片</li>
+</ul>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914123857609.png" alt="image-20210914123857609" /></p>
+<h3>2.主题Flat remix美化</h3>
+<p>```</p>
+<h1>安装必要软件</h1>
+<p>sudo apt update
+sudo apt install gnome-tweaks chrome-gnome-shell
+sudo apt install gtk2-engines-murrine gtk2-engines-pixbuf 
+sudo apt install sassc optipng inkscape libcanberra-gtk-module libglib2.0-dev libxml2-utils</p>
+<h1>搜索tweak打开use theme插件，如果没有去官网安装</h1>
+<p>https://extensions.gnome.org/</p>
+<h1>百度网盘里面有四个主题有一定区别选一个就行：</h1>
+<p>链接: https://pan.baidu.com/s/1sWRr5d1PnMFBgzDXOQEAHw<br />
+密码: csu8</p>
+<p>主题解压后的目录放到/usr/share/themes/，
+sudo mv 主题的文件夹名  /usr/share/themes</p>
+<p>(1)在完成安装gnome扩展软件后,打开Tweaks选择 “Extensions”选项，“User themes” 按钮设置成on
+(2)如果shell上有感叹号，关闭tweak，按Alt+F2，输入r，执行后重新打开tweak再设置shell选项。
+```</p>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914125207047.png" alt="image-20210914125207047" /></p>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914125307447.png" alt="image-20210914125307447" /></p>
+<h3>3.图标</h3>
+<p><code>链接: https://pan.baidu.com/s/1P2a_Nv1mJUBKXqbH85Sqvg  
+密码: tsq2
+图标放到/usr/share/icons/
+文件中有两个图标，样式有一点点不同</code></p>
+<h3>4.docky配置</h3>
+<p>```</p>
+<h1>1.按顺序运行即可</h1>
+<p>mkdir -p ~/Downloads/docky 
+cd ~/Downloads/docky 
+wget http://archive.ubuntu.com/ubuntu/pool/universe/g/gnome-sharp2/libgconf2.0-cil<em>2.24.2-4</em>all.deb 
+wget http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/multiarch-support<em>2.27-3ubuntu1<em>amd64.deb 
+wget http://archive.ubuntu.com/ubuntu/pool/universe/libg/libgnome-keyring/libgnome-keyring-common</em>3.12.0-1build1</em>all.deb 
+wget http://archive.ubuntu.com/ubuntu/pool/universe/libg/libgnome-keyring/libgnome-keyring0<em>3.12.0-1build1</em>amd64.deb 
+wget http://archive.ubuntu.com/ubuntu/pool/universe/g/gnome-keyring-sharp/libgnome-keyring1.0-cil<em>1.0.0-5</em>amd64.deb 
+sudo apt install ./*.deb </p>
+<p>wget http://archive.ubuntu.com/ubuntu/pool/universe/d/docky/docky<em>2.2.1.1-1</em>all.deb 
+sudo apt install ./docky<em>2.2.1.1-1</em>all.deb 
+2.关闭ubuntu原始docky，太丑了</p>
+<p>```</p>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914134029565.png" alt="image-20210914134029565" /></p>
+<p><img src="https://gitee.com/Doerr33/images/raw/master/img/image-20210914134041094.png" alt="image-20210914134041094" /></p>
 
 </body>
 </html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
